@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ff55f34430bea4d8312903bbdb8399, type: 3}
+  m_Name: EnvironmentData_Shapes
+  m_EditorClassIdentifier: 
+  _gameObjects:
+  - {fileID: 8398769680767215839, guid: 6139d30a24e7f18449260d5d2d95590f, type: 3}
+  - {fileID: 5076352050628469522, guid: 8c1b082234765194184a852177d8c774, type: 3}
+  - {fileID: 7672226757979612270, guid: f722acb30b619814198705492014c963, type: 3}
+  - {fileID: 7991878958587781564, guid: 887189a6a1bb71745a6c35c67a31edf2, type: 3}
+  _amountOfObjects: 05000000040000000300000002000000
+  _maxX:
+  - 20
+  - 15
+  - 10
+  - 5
+  _maxY:
+  - 20
+  - 15
+  - 10
+  - 5
+  _maxZ:
+  - 20
+  - 15
+  - 10
+  - 5
+  _xRot:
+  - 360
+  - 0
+  - 0
+  - 360
+  _yRot:
+  - 0
+  - 360
+  - 0
+  - 360
+  _zRot:
+  - 0
+  - 0
+  - 360
+  - 360
+  _xScale:
+  - 10
+  - 7
+  - 3
+  - 1
+  _yScale:
+  - 10
+  - 7
+  - 3
+  - 1
+  _zScale:
+  - 10
+  - 7
+  - 3
+  - 1
