@@ -30,10 +30,13 @@ public class EnvironmentData : ScriptableObject
     public float[] zRot => _zRot;
 
     [Header("Object Scale Control:")]
-    [SerializeField] [Tooltip("If scale toggle is turned on, determines max scale along the X axis.")] private float[] _xScale;
+    [SerializeField] [Tooltip("Toggles random scaling.")] private bool[] _scaleToggle;
+    public bool[] ScaleToggle => _scaleToggle;
+
+    [SerializeField] [Tooltip("If scale toggle is turned on, determines max scale along the X axis relative to 1.")] private float[] _xScale;
     public float[] xScale => _xScale;
-    [SerializeField] [Tooltip("If scale toggle is turned on, determines max scale along the Y axis.")] private float[] _yScale;
+    [SerializeField] [Tooltip("If scale toggle is turned on, determines max scale along the Y axis relative to 1.")] private float[] _yScale;
     public float[] yScale => _yScale;
-    [SerializeField] [Tooltip("If scale toggle is turned on, determines max scale along the Z axis.")] private float[] _zScale;
+    [SerializeField] [Tooltip("If scale toggle is turned on, determines max scale along the Z axis relative to 1.")] private float[] _zScale;
     public float[] zScale => _zScale;
 }

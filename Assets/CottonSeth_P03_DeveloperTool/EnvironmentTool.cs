@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 public class EnvironmentTool : MonoBehaviour
 {
     [SerializeField] private EnvironmentData _enviromentData;
+    private float xS, yS, zS;
 
     private void Start()
     {
@@ -14,7 +15,20 @@ public class EnvironmentTool : MonoBehaviour
         {
             for (int j = 0; j < _enviromentData.AmountOfObjects[i]; j++)
             {
-                _enviromentData.GameObjects[i].transform.localScale = new Vector3(Random.Range(0,_enviromentData.xScale[i]), Random.Range(0, _enviromentData.xScale[i]),Random.Range(0, _enviromentData.xScale[i]));
+                if (_enviromentData.ScaleToggle[i] == false)
+                {
+                    xS = 1;
+                    yS = 1;
+                    zS = 1;
+                } 
+                else
+                {
+                    xS = Random.Range(1, _enviromentData.xScale[i]);
+                    yS = Random.Range(1, _enviromentData.yScale[i]);
+                    zS = Random.Range(1, _enviromentData.zScale[i]);
+                }
+
+                _enviromentData.GameObjects[i].transform.localScale = new Vector3(xS,yS,zS);
                 Instantiate(_enviromentData.GameObjects[i], new Vector3(
                     Random.Range(-_enviromentData.MaxX[i], _enviromentData.MaxX[i]) + this.transform.position.x,
                     Random.Range(-_enviromentData.MaxY[i], _enviromentData.MaxY[i]) + this.transform.position.y,
